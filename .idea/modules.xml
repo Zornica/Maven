@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject/myProject.iml" filepath="$PROJECT_DIR$/myProject/myProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject-bl/myProject-bl.iml" filepath="$PROJECT_DIR$/myProject-bl/myProject-bl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject-bo/myProject-bo.iml" filepath="$PROJECT_DIR$/myProject-bo/myProject-bo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject-pl/myProject-pl.iml" filepath="$PROJECT_DIR$/myProject-pl/myProject-pl.iml" />
+    </modules>
+  </component>
+</project>
+
