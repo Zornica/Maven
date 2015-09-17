@@ -1,4 +1,4 @@
-package com.adapter;
+package com;
 
 /**
  * Created by Zornitsa Petkova on 9/15/15.

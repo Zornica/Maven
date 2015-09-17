@@ -1,11 +1,6 @@
 package com;
 
 
-import com.adapter.ConnectionJDBC;
-import com.adapter.JDBCTemplate;
-import com.adapter.Providers;
-import com.core.PersistentStudentRepository;
-
 import java.util.List;
 
 /**

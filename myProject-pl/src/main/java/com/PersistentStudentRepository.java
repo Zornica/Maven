@@ -1,9 +1,5 @@
-package com.core;
+package com;
 
-
-import com.Student;
-import com.adapter.JDBCTemplate;
-import com.adapter.RowFetcher;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
