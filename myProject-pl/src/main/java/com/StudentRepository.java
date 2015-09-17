@@ -1,8 +1,6 @@
 package com;
 
 
-import com.Student;
-
 import java.util.List;
 
 /**
@@ -11,7 +9,7 @@ import java.util.List;
 public interface StudentRepository {
   void registerStudent(Student student);
 
-  void deleteStudent(Student student);
+  void deleteStudent();
 
   void updateStudent(Student student);
 

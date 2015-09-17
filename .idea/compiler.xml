@@ -28,6 +28,12 @@
         <module name="myProject-pl" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="myProject" target="1.7" />
+      <module name="myProject-bl" target="1.7" />
+      <module name="myProject-bo" target="1.7" />
+      <module name="myProject-pl" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

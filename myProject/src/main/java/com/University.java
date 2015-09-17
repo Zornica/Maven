@@ -20,12 +20,10 @@ public class University {
   }
 
   public void deleteStudent() {
-    List<Student> list = repository.findAll();
-    for(Student student:list){
-    if (student.year == 4 || student.isPaid.equals("no")) {
-      repository.deleteStudent(student);
-    }
-    }
+
+      repository.deleteStudent();
+
+
 
   }
 

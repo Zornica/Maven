@@ -19,16 +19,50 @@ public class Demo {
     university.registerStudent(student2);
     university.registerStudent(student3);
 
+    Rectorat rectorat = new Rectorat();
+    rectorat.registerStudent(student1);
+    rectorat.registerStudent(student2);
+    rectorat.registerStudent(student3);
+
+
+
+
+
+
+
+    System.out.println("***********************************");
+    System.out.println("Rectorat : ");
+    List<Student> students = rectorat.allStudents();
+    for(Student s: students){
+      System.out.println(s.toString());
+    }
+    System.out.println("Universary :");
     List<Student> list = university.allStudents();
     for(Student s: list){
       System.out.println(s.toString());
     }
-
+    System.out.println("***********************************");
+    System.out.println("Rectorat : ");
+    rectorat.updateStudent(newStudent().name("Ivan").age(24).idNumber(18007).year(3).isPaid("yes").build());
+    List<Student> studentsAfterUpdate = rectorat.allStudents();
+    for(Student s: studentsAfterUpdate){
+      System.out.println(s.toString());
+    }
+    System.out.println("University : ");
     university.updateStudent(newStudent().name("Ivan").age(24).idNumber(18007).year(3).isPaid("yes").build());
-
+    List<Student> after = university.allStudents();
+    for(Student s: after){
+      System.out.println(s.toString());
+    }
+    System.out.println("**************************************");
+    System.out.println("Rectorat : ");
+    rectorat.deleteStudent();
+    List<Student> studentAfterDelete = rectorat.allStudents();
+    for(Student s: studentAfterDelete){
+      System.out.println(s.toString());
+    }
+    System.out.println("University : ");
     university.deleteStudent();
-
-    System.out.println("");
 
     List<Student> afterDeleted = university.allStudents();
     for(Student s: afterDeleted){

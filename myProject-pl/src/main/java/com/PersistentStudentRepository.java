@@ -28,9 +28,14 @@ public class PersistentStudentRepository implements StudentRepository {
   }
 
   @Override
-  public void deleteStudent(Student student) {
-    String query = "delete from student where name = '"+student.name+"'";
+  public void deleteStudent() {
+    List<Student> list = findAll();
+    for(Student student:list){
+      if (student.year == 4 || student.isPaid.equals("no")) {
+    String query = "delete from student where idNumber = '"+student.idNumber+"'";
     template.makeRequest(query);
+      }
+    }
   }
 
   @Override
