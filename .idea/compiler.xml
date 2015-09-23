@@ -29,6 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HelloWorld" target="1.7" />
       <module name="myProject" target="1.7" />
       <module name="myProject-bl" target="1.7" />
       <module name="myProject-bo" target="1.7" />

@@ -1,5 +1,11 @@
-package com;
+package com.clouway;
 
+
+import com.ConnectionJDBC;
+import com.JDBCTemplate;
+import com.PersistentStudentRepository;
+import com.Providers;
+import com.Student;
 
 import java.util.List;
 

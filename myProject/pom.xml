@@ -13,7 +13,7 @@
   <url>http://maven.apache.org</url>
   <build>
     <plugins>
-      <plugin>
+<!--      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <version>2.2</version>
@@ -26,9 +26,34 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.Demo</mainClass>
+                  <mainClass>com.clouway.Demo</mainClass>
                 </transformer>
               </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>-->
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>jarjar-maven-plugin</artifactId>
+        <version>1.9</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jarjar</goal>
+            </goals>
+            <configuration>
+              <includes>
+                <include>asm:asm</include>
+                <include>org.sonatype.sisu.inject:cglib</include>
+              </includes>
+              <rules>
+
+                <keep>
+                  <pattern>com.clouway.**</pattern>
+                </keep>
+              </rules>
             </configuration>
           </execution>
         </executions>

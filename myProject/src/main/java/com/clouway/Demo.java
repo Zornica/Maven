@@ -1,4 +1,8 @@
-package com;
+package com.clouway;
+
+import com.Rectorat;
+import com.Student;
+import com.clouway.University;
 
 import java.util.List;
 
